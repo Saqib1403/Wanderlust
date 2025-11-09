@@ -1,0 +1,201 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+/* ------------------ FOOTER SECTION ------------------ */
+footer {
+  background-color: #ebebeb;
+  padding: 0.8rem 0;
+  text-align: center;
+}
+
+.f-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+}
+
+.f-info-socials i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.f-info-socials i:hover {
+  color: #f39c12;
+}
+
+.f-info-brand {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+  margin-right: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+  color: #f39c12;
+}
+
+/* ------------------ CARDS SECTION ------------------ */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: #fff;
+}
+
+/* ------------------ LISTING SECTION ------------------ */
+/* New Page */
+.btn-color {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Edit Page */
+.btn-add {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Show Page */
+.show-img {
+  height: 40vh;
+  object-fit: cover;
+}
+
+/* ------------------ FILTERS PANEL SECTION ------------------ */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.filter {
+  text-align: center;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  flex: 0 0 auto;
+}
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.filter p {
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+/* Switch button */
+.tax-toggle {
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  margin-left: auto;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+.tax-info {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  #filters {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .tax-toggle {
+    margin-left: 0;
+    order: 12;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #filters {
+    gap: 0.8rem;
+  }
+
+  .filter {
+    margin-right: 1rem;
+  }
+
+  .filter p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .filter {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+  }
+
+  .tax-toggle {
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }
+}
